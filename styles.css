@@ -70,13 +70,14 @@ h4{
     display: flex;
     justify-content: left;
     align-items: center;
-    translate: 200px -380px;
+    translate: 200px -370px;
     position: relative;
 }
 
 .image img{
     height: 400px;
     width: 400px;
+    translate: 5px;
     border-radius: 1000px;
 
 }
@@ -90,15 +91,13 @@ h4{
 .image::after, .image::before{
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
     z-index: -1;
-    top:50%;
-    left:30%;
+    /* top:50%;
+    left:30%; */
     height: 410px;
     width: 410px;
     background-image: conic-gradient(from var(--angle), rgb(215, 51, 86),rgb(255, 153, 0),rgb(10, 198, 154),rgb(0, 166, 255),rgb(114, 0, 172),rgb(215, 51, 86));
-    translate: -499px -205px;
+    /* translate: -499px -205px; */
     border-radius: 1000px;
     align-items: center;
     animation: 3s spin linear infinite;
@@ -137,7 +136,3 @@ a{
     color:rgb(20, 33, 220)
     
 }
-
-
-
-
