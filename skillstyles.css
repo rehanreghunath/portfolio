@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(40, 40, 40));
+    padding: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(20, 33, 220);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+h1{
+    padding: 100px;
+    margin-left: 600px;
+    font-size: 50px;
+    color: white;
+}
+
+.cards1{
+    padding:50px;
+    margin-top: -100px;
+    margin-left: 350px;
+    margin-bottom: -100px;
+.c{
+    height:300px;
+    width:300px;
+    padding:50px;
+    transition: 0.5s;
+}
+
+.c:hover{
+    height: 330px;
+    width: 330px;
+}
+
+.web{
+    height:300px;
+    width:300px;
+    padding:50px;
+    transition: 0.5s;
+}
+
+.web:hover{
+    height: 330px;
+    width: 330px;
+}
+
+.edit{
+    height:300px;
+    width:300px;
+    padding:50px;
+    transition: 0.5s;
+}
+
+.edit:hover{
+    height: 330px;
+    width: 330px;
+}
+
+.dbms{
+    height:300px;
+    width:300px;
+    padding:50px;
+    margin-left: 300px;
+    transition: 0.5s;
+}
+
+.dbms:hover{
+    height: 330px;
+    width: 330px;
+}
+
+
+}
+
+#dbms{
+    margin-left: 680px;
+}
+
+#vfx{
+    margin-left: 650px;
+}

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(40, 40, 40));
+    padding: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(20, 33, 220);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+a{
+    translate: 10px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+}
+
+.card{
+    height: 400px;
+    width: 330px;
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(15, 9, 48));
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+
+h3{
+    translate: 90px;
+}
+
+p{
+    margin:10px;
+}
+
+img{
+    height: 200px;
+    width:325px;
+    padding:15px;
+    border-radius: 30px;
+    transition: 0.5s;
+    
+}
+transition: 0.5s;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.card:hover::after, .card:hover::before{    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:50%;
+    left:30%;
+    height: 440px;
+    width: 370px;
+    background-image: conic-gradient(from var(--angle),transparent 90%, rgb(20,33,220));
+    translate: -105px -220px;
+    border-radius: 10px;
+    align-items: center;
+    animation: 2s spin linear infinite;
+    
+}
+
+.card:hover::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    
+}
+
+.card:hover{
+    height: 430px;
+    width: 360px;
+img{
+    height: 230px;
+    width:355px;
+}
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+
+    to{
+        --angle: 360deg; 
+    }
+    
+}
+
+
+
+
